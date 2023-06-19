@@ -11,8 +11,6 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-.btn {
-}
 /* Шапка страницы */
 .navbar {
   display: flex;
@@ -55,6 +53,9 @@ body {
   -webkit-box-shadow: 2px 4px 18px 7px rgba(255, 255, 255, 0.2);
   -moz-box-shadow: 2px 4px 18px 7px rgba(255, 255, 255, 0.2);
   box-shadow: 2px 4px 18px 7px rgba(255, 255, 255, 0.2);
+}
+.navbar__btn_burger {
+  display: none;
 }
 /* Главная секция */
 header {
@@ -187,11 +188,11 @@ header {
 .portfolio__item {
   height: min-content;
   border-radius: 14px;
-  padding: 24px;
+  padding: 18px;
   background: #1e1e20;
 }
 .portfolio__item img {
-  width: 300px;
+  width: 100%;
 }
 .portfolio__item:nth-child(2) {
   margin-top: 90px;
@@ -264,4 +265,58 @@ footer {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   text-align: right;
+}
+
+.burger__menu {
+  display: none;
+  width: 90%;
+  background: #2c2c33;
+  position: absolute;
+  z-index: 1;
+  margin-top: 30px;
+  border-radius: 10px;
+  top: 1%;
+  left: 1%;
+  right: 1%;
+}
+.burger_menu__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.burger_menu__input {
+  width: 30%;
+  height: 10%;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+}
+.burger_menu__list {
+  list-style-type: none;
+  padding: 0;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger_menu__item a {
+  text-decoration: none;
+  transition: 0.2s;
+  color: white;
+}
+
+.burger_menu__item a:hover {
+  color: #5454d4;
+}
+.burger_menu__btn-close {
+  width: 4%;
+  height: 4%;
+  cursor: pointer;
+  margin: 4% 0;
 }

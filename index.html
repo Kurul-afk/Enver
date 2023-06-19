@@ -10,14 +10,39 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/adaptive.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
+      <div class="burger__menu">
+        <div class="burger_menu__content">
+          <img
+            class="burger_menu__btn-close"
+            src="./images/cancel_btn.png"
+            alt=""
+          />
+          <input type="text" class="burger_menu__input" />
+          <ul class="burger_menu__list">
+            <li class="burger_menu__item">
+              <a href="#">Home</a>
+            </li>
+            <li class="burger_menu__item">
+              <a href="#">Services</a>
+            </li>
+            <li class="burger_menu__item">
+              <a href="#">Our Projects</a>
+            </li>
+            <li class="burger_menu__item">
+              <a href="#">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="navbar">
         <img src="./images/logo.png" alt="logo" />
-        <ul class="navbar__list">
+        <!-- <ul class="navbar__list">
           <li class="list__item">
             <a href="#">Home</a>
           </li>
@@ -30,8 +55,13 @@
           <li class="list__item">
             <a href="#">About us</a>
           </li>
-        </ul>
+        </ul> -->
         <input type="text" class="navbar__input" />
+        <img
+          class="navbar__btn_burger"
+          src="./images/navbar_btn.png"
+          alt="burger-menu"
+        />
       </div>
       <header>
         <div class="header__block_left">
@@ -160,5 +190,6 @@
         <p class="footer__info">© 2022 Enver, All Rights Reserved</p>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
